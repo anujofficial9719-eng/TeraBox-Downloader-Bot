@@ -108,7 +108,7 @@ async def command_help(m: UpdateNewMessage):
 
 Directly share me the link i will share you the video with direct link
 
-For premium contact @abdul97233
+For premium contact @arafta_hindi_dubbed_webseries
 """
 
     await m.reply(
@@ -126,11 +126,11 @@ For premium contact @abdul97233
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/NTMpro"),
-                Button.url("Group ", url="https://t.me/NTMchat"),
+                Button.url("Channel ", url="https://t.me/+BV95Jqx_Jb1kMDg1"),
+                Button.url("Group ", url="https://t.me/+BV95Jqx_Jb1kMDg1"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/abdul97233"),
+                Button.url("Owner ", url="https://t.me/arafta_hindi_dubbed_webseries"),
             ],
         ],
     )
@@ -268,7 +268,7 @@ async def broadcast_message(m: UpdateNewMessage):
     broadcast_text = m.text.split("/broadcast", 1)[1].strip()
     
     # Fetch all users who have interacted with the bot
-    all_users = await bot.get_participants(-1001336746488)  # Replace with your group ID
+    all_users = await bot.get_participants(-1003899879630)  # Replace with your group ID
     
     # Iterate through all users and send the broadcast message
     for user in all_users:
@@ -306,7 +306,7 @@ async def broadcast_message(m: UpdateNewMessage):
 # ╚═════════════════⍟
 # Do /help or /cmds - Display available commands.
 
-# [『 𝗡⋆𝗧⋆𝗠 』](https://t.me/NTMpro) 
+# [『 𝗡⋆𝗧⋆𝗠 』](https://t.me/arafta_hindi_dubbed_webseries) 
 # """
 #     else:
 #         # Free user
@@ -365,7 +365,7 @@ async def start(m: UpdateNewMessage):
 ╚═════════════════⍟
 Do /help or /cmds - Display available commands.
 
-[『 𝗡⋆𝗧⋆𝗠 』](https://t.me/NTMpro) 
+[『 𝗡⋆𝗧⋆𝗠 』](https://t.me/arafta_hindi_dubbed_webseries) 
 """
     else:
         # Free user
@@ -383,7 +383,7 @@ Do /help or /cmds - Display available commands.
 ┃ /id or /info - To check your details
 ┃ /plan - To check availabe plan 
 ╚═════════════════⍟
-For subscription inquiries, contact @abdul97233.
+For subscription inquiries, contact @arafta_hindi_dubbed_webseries.
 """
     await m.reply(
         reply_text,
@@ -400,11 +400,11 @@ For subscription inquiries, contact @abdul97233.
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/NTMpro"),
-                Button.url("Group ", url="https://t.me/NTMchat"),
+                Button.url("Channel ", url="https://t.me/arafta_hindi_dubbed_webseries"),
+                Button.url("Group ", url="https://t.me/auth_channel_l"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/abdul97233"),
+                Button.url("Owner ", url="https://t.me/arafta_hindi_dubbed_webseries"),
             ],
         ],
     )
@@ -468,7 +468,7 @@ Payment Methods Available:
 
 Note: Nepal and India all payment accepted.
 
-To purchase premium, send a message to @Abdul97233.
+To purchase premium, send a message to @arafta_hindi_dubbed_webseries.
 """
     await m.reply(plan_text, parse_mode="markdown")
 
@@ -565,17 +565,17 @@ async def handle_message(m: Message):
     url = get_urls_from_string(m.text)
     if not url:
         return await m.reply("Please enter a valid url.")
-    check_if = await is_user_on_chat(bot, "@NTMpro", m.peer_id)
+    check_if = await is_user_on_chat(bot, "@arafta_hindi_dubbed_webseries", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @NTMpro then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@NTMchat", m.peer_id)
+        return await m.reply("Please join @arafta_hindi_dubbed_webseries then send me the link again.")
+    check_if = await is_user_on_chat(bot, "@auth_channel_l", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @NTMchat then send me the link again."
+            "Please join @auth_channel_l then send me the link again."
         )
     
     is_spam = db.get(m.sender_id)
-    if is_spam and m.sender_id not in [803003146]:
+    if is_spam and m.sender_id not in [7521421400]:
         if db.sismember(PREMIUM_USERS_KEY, m.sender_id):
             return await m.reply("You are spamming. Please wait 30 seconds and try again.")
         else:
@@ -630,7 +630,7 @@ async def handle_message(m: Message):
         return await hm.edit(
             f"Sorry! File is not supported for now. I can download only .mp4, .mkv and .webm files."
         )
-    if int(data["sizebytes"]) > 524288000 and m.sender_id not in [803003146]:
+    if int(data["sizebytes"]) > 7521421400 and m.sender_id not in [7521421400]:
         return await hm.edit(
             f"Sorry! File is too big. I can download only 500MB and this file is of {data['size']} ."
         )
@@ -693,7 +693,7 @@ async def handle_message(m: Message):
 ╟➣𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲: {user_username}
 ╟➣𝐓𝐨𝐭𝐚𝐥 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧: {total_time} sec
 ╚═════════════════⍟
-         @NTMpro
+         @arafta_hindi_dubbed_webseries
 """,
             supports_streaming=True,
             spoiler=True,
