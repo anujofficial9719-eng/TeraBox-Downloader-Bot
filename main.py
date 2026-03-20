@@ -563,17 +563,9 @@ async def get_message(m: Message):
 
 async def handle_message(m: Message):
 
-    url = get_urls_from_string(m.text)
-    if not url:
-        return await m.reply("Please enter a valid url.")
-    check_if = await is_user_on_chat(bot, "https://t.me/+m9cYPWGqttk2ZTU1", m.peer_id)
-    if not check_if:
-        return await m.reply("Please join @Terabox_down_ak_bot then send me the link again.")
-    check_if = await is_user_on_chat(bot, "https://t.me/+m9cYPWGqttk2ZTU1", m.peer_id)
-    if not check_if:
-        return await m.reply(
-            "Please join https://t.me/+m9cYPWGqttk2ZTU1 then send me the link again."
-        )
+    check_if = await is_user_on_chat(bot, "@log_channel_a", m.peer_id)
+if not check_if:
+    return await m.reply("Please join @log_channel_a then send me the link again.")
     
     is_spam = db.get(m.sender_id)
     if is_spam and m.sender_id not in [7892805795]:
