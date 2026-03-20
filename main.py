@@ -53,7 +53,6 @@ GIFT_CODES_KEY = "gift_codes"
     )
 )
 async def user_info(m: UpdateNewMessage):
-    async def user_info(m: UpdateNewMessage):
     sender = await m.get_sender()
     user_id = sender.id
     name = sender.first_name
