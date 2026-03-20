@@ -38,7 +38,6 @@ GIFT_CODES_KEY = "gift_codes"
 
 # Define /info and /id commands to display user information
 
-async def user_info(m: UpdateNewMessage):
 @bot.on(
     events.NewMessage(
         pattern="/info|/id",
