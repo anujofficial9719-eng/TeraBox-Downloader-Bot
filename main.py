@@ -29,6 +29,7 @@ bot = TelegramClient("tele", API_ID, API_HASH)
 db = redis.Redis(
     host=HOST,
     port=PORT,
+    username=USERNAME,   
     password=PASSWORD,
     decode_responses=True,
 )
