@@ -83,7 +83,7 @@ async def user_info(m: UpdateNewMessage):
 
 # Directly share me the link i will share you the video with direct link
 
-# For premium contact @abdul97233
+# For premium contact @anujedits76
 # """
 #     await m.reply(help_text)
 @bot.on(
@@ -108,7 +108,7 @@ async def command_help(m: UpdateNewMessage):
 
 Directly share me the link i will share you the video with direct link
 
-For premium contact @arafta_hindi_dubbed_webseries
+For premium contact @anujedits76
 """
 
     await m.reply(
@@ -126,11 +126,11 @@ For premium contact @arafta_hindi_dubbed_webseries
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/+BV95Jqx_Jb1kMDg1"),
-                Button.url("Group ", url="https://t.me/+BV95Jqx_Jb1kMDg1"),
+                Button.url("Channel ", url="https://t.me/log_channel_a"),
+                Button.url("Group ", url="https://t.me/+m9cYPWGqttk2ZTU1"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/arafta_hindi_dubbed_webseries"),
+                Button.url("Owner ", url="https://t.me/anujedits76"),
             ],
         ],
     )
@@ -165,19 +165,19 @@ async def ping_pong(m: UpdateNewMessage):
 )
 # async def generate_gift_codes(m: UpdateNewMessage):
 #     quantity = int(m.pattern_match.group(1))
-#     gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+#     gift_codes = [f"ANUJ-{str(uuid4())[:8]}" for _ in range(quantity)]
 #     db.sadd(GIFT_CODES_KEY, *gift_codes)
 #     await m.reply(f"{quantity} gift codes generated: {', '.join(gift_codes)}")
 # async def generate_gift_codes(m: UpdateNewMessage):
 #     quantity = int(m.pattern_match.group(1))
-#     gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+#     gift_codes = [f"ANUJ-{str(uuid4())[:8]}" for _ in range(quantity)]
 #     db.sadd(GIFT_CODES_KEY, *gift_codes)
 #     reply_text = "\n".join(gift_codes)  # Joining the gift codes with newline character
 #     await m.reply(reply_text)
 
 async def generate_gift_codes(m: UpdateNewMessage):
     quantity = int(m.pattern_match.group(1))
-    gift_codes = [f"NTM-{str(uuid4())[:8]}" for _ in range(quantity)]
+    gift_codes = [f"ANUJ-{str(uuid4())[:8]}" for _ in range(quantity)]
     db.sadd(GIFT_CODES_KEY, *gift_codes)
     
     # Send a reply confirming the generation of gift codes
@@ -268,7 +268,7 @@ async def broadcast_message(m: UpdateNewMessage):
     broadcast_text = m.text.split("/broadcast", 1)[1].strip()
     
     # Fetch all users who have interacted with the bot
-    all_users = await bot.get_participants(-1003899879630)  # Replace with your group ID
+    all_users = await bot.get_participants(-1003515041061)  # Replace with your group ID
     
     # Iterate through all users and send the broadcast message
     for user in all_users:
@@ -294,7 +294,7 @@ async def broadcast_message(m: UpdateNewMessage):
 #         # Premium user
 #         reply_text = """
 # ┏━━━━━━━━━━⍟
-# ┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+#   𝐀𝐍𝐔𝐉 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 # ┗━━━━━━━━━━━━━━━━━⍟
 # ╔══════════⍟
 # ┃🌟 Welcome! 🌟
@@ -306,7 +306,7 @@ async def broadcast_message(m: UpdateNewMessage):
 # ╚═════════════════⍟
 # Do /help or /cmds - Display available commands.
 
-# [『 𝗡⋆𝗧⋆𝗠 』](https://t.me/arafta_hindi_dubbed_webseries) 
+# [『 𝗔⋆𝗡⋆𝗨⋆𝗝 』](https://t.me/anujedits76) 
 # """
 #     else:
 #         # Free user
@@ -320,15 +320,15 @@ async def broadcast_message(m: UpdateNewMessage):
 # ┃
 # ┃ Upgrade to premium or utilize /id, /cmds, or /help to view available details. 
 # ┃
-# ┃ To check availabe plan do /plan in chat group @NTMchat
+# ┃ To check availabe plan do /plan in chat group 
 # ╚═════════════════⍟
-# For subscription inquiries, contact @abdul97233.
+# For subscription inquiries, contact https://t.me/anujedits76
 # """
 
 #     # Send the welcome message
-#     check_if = await is_user_on_chat(bot, "@NTMpro", m.peer_id)
+#     check_if = await is_user_on_chat(bot, "@Terabox_down_ak_bot", m.peer_id)
 #     if not check_if:
-#         return await m.reply("Please join @NTMpro then send me the link again.")
+#         return await m.reply("Please join @Terabox_down_ak_bot then send me the link again.")
 #     await m.reply(reply_text, link_preview=False, parse_mode="markdown")
 
 # Define start command to check user's plan and send welcome message accordingly
@@ -353,7 +353,7 @@ async def start(m: UpdateNewMessage):
         # Premium user
         reply_text = """
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃ 𝐀𝐍𝐔𝐉 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ┃🌟 Welcome! 🌟
@@ -365,7 +365,7 @@ async def start(m: UpdateNewMessage):
 ╚═════════════════⍟
 Do /help or /cmds - Display available commands.
 
-[『 𝗡⋆𝗧⋆𝗠 』](https://t.me/arafta_hindi_dubbed_webseries) 
+[『 𝗔⋆𝗡⋆𝗨⋆𝗝 』](https://t.me/anujedits76) 
 """
     else:
         # Free user
@@ -383,7 +383,7 @@ Do /help or /cmds - Display available commands.
 ┃ /id or /info - To check your details
 ┃ /plan - To check availabe plan 
 ╚═════════════════⍟
-For subscription inquiries, contact @arafta_hindi_dubbed_webseries.
+For subscription inquiries, contact @anujedits76.
 """
     await m.reply(
         reply_text,
@@ -400,11 +400,11 @@ For subscription inquiries, contact @arafta_hindi_dubbed_webseries.
                 ),
             ],
             [
-                Button.url("Channel ", url="https://t.me/arafta_hindi_dubbed_webseries"),
-                Button.url("Group ", url="https://t.me/auth_channel_l"),
+                Button.url("Channel ", url="https://t.me/log_channel_a"),
+                Button.url("Group ", url="https://t.me/+m9cYPWGqttk2ZTU1"),
             ],
             [
-                Button.url("Owner ", url="https://t.me/arafta_hindi_dubbed_webseries"),
+                Button.url("Owner ", url="https://t.me/anujedits76"),
             ],
         ],
     )
@@ -468,7 +468,7 @@ Payment Methods Available:
 
 Note: Nepal and India all payment accepted.
 
-To purchase premium, send a message to @arafta_hindi_dubbed_webseries.
+To purchase premium, send a message to @anujedits76.
 """
     await m.reply(plan_text, parse_mode="markdown")
 
@@ -565,17 +565,17 @@ async def handle_message(m: Message):
     url = get_urls_from_string(m.text)
     if not url:
         return await m.reply("Please enter a valid url.")
-    check_if = await is_user_on_chat(bot, "@arafta_hindi_dubbed_webseries", m.peer_id)
+    check_if = await is_user_on_chat(bot, "https://t.me/+m9cYPWGqttk2ZTU1", m.peer_id)
     if not check_if:
-        return await m.reply("Please join @arafta_hindi_dubbed_webseries then send me the link again.")
-    check_if = await is_user_on_chat(bot, "@auth_channel_l", m.peer_id)
+        return await m.reply("Please join @Terabox_down_ak_bot then send me the link again.")
+    check_if = await is_user_on_chat(bot, "https://t.me/+m9cYPWGqttk2ZTU1", m.peer_id)
     if not check_if:
         return await m.reply(
-            "Please join @auth_channel_l then send me the link again."
+            "Please join https://t.me/+m9cYPWGqttk2ZTU1 then send me the link again."
         )
     
     is_spam = db.get(m.sender_id)
-    if is_spam and m.sender_id not in [7521421400]:
+    if is_spam and m.sender_id not in [7892805795]:
         if db.sismember(PREMIUM_USERS_KEY, m.sender_id):
             return await m.reply("You are spamming. Please wait 30 seconds and try again.")
         else:
@@ -630,7 +630,7 @@ async def handle_message(m: Message):
         return await hm.edit(
             f"Sorry! File is not supported for now. I can download only .mp4, .mkv and .webm files."
         )
-    if int(data["sizebytes"]) > 7521421400 and m.sender_id not in [7521421400]:
+    if int(data["sizebytes"]) > 7892805795 and m.sender_id not in [7892805795]:
         return await hm.edit(
             f"Sorry! File is too big. I can download only 500MB and this file is of {data['size']} ."
         )
@@ -683,7 +683,7 @@ async def handle_message(m: Message):
             progress_callback=progress_bar,
             caption=f"""
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃ 𝐀𝐍𝐔𝐉 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ╟➣𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚: `{data['file_name']}`
@@ -693,7 +693,7 @@ async def handle_message(m: Message):
 ╟➣𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲: {user_username}
 ╟➣𝐓𝐨𝐭𝐚𝐥 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧: {total_time} sec
 ╚═════════════════⍟
-         @arafta_hindi_dubbed_webseries
+         @Terabox_down_ak_bot
 """,
             supports_streaming=True,
             spoiler=True,
@@ -714,7 +714,7 @@ async def handle_message(m: Message):
             download,
             caption=f"""
 ┏━━━━━━━━━━⍟
-┃ 𝐍𝐓𝐌 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
+┃ 𝐀𝐍𝐔𝐉 𝐓𝐞𝐫𝐚 𝐁𝐨𝐱 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝐁𝐨𝐭
 ┗━━━━━━━━━━━━━━━━━⍟
 ╔══════════⍟
 ╟➣𝙁𝙞𝙡𝙚 𝙉𝙖𝙢𝙚: `{data['file_name']}`
@@ -724,7 +724,7 @@ async def handle_message(m: Message):
 ╟➣𝗨𝘀𝗲𝗿𝗻𝗮𝗺𝗲: {user_username}
 ╟➣𝐓𝐨𝐭𝐚𝐥 𝐓𝐢𝐦𝐞 𝐓𝐚𝐤𝐞𝐧: {total_time} sec
 ╚═════════════════⍟
-         @NTMpro
+         @Terabox_down_ak_bot
 
 """,
             progress_callback=progress_bar,
