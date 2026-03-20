@@ -53,17 +53,17 @@ GIFT_CODES_KEY = "gift_codes"
     )
 )
 async def user_info(m: UpdateNewMessage):
+    async def user_info(m: UpdateNewMessage):
     sender = await m.get_sender()
-user_id = sender.id
-name = sender.first_name
-username = sender.username if sender.username else "-"
+    user_id = sender.id
+    name = sender.first_name
+    username = sender.username if sender.username else "-"
 
-plan = "Premium" if db.sismember(PREMIUM_USERS_KEY, user_id) else "Free"
+    plan = "Premium" if db.sismember(PREMIUM_USERS_KEY, user_id) else "Free"
 
-info_text = f"Name: {name}\nUsername: @{username}\nUser ID: `{user_id}`\nPlan: {plan}"
+    info_text = f"Name: {name}\nUsername: @{username}\nUser ID: `{user_id}`\nPlan: {plan}"
 
-await m.reply(info_text, parse_mode="markdown", link_preview=False)
-
+    await m.reply(info_text, parse_mode="markdown", link_preview=False)
 # Define /cmds or /help command to describe all available commands
 # @bot.on(
 #     events.NewMessage(
