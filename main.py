@@ -343,8 +343,12 @@ async def start(m: UpdateNewMessage):
     username = user.username if user.username else "-"
     
     admin_message = f"User started the bot:\nName: {name}\nUsername: @{username}\nUser ID: {user_id}"
+
+try:
     for admin_id in ADMINS:
         await bot.send_message(admin_id, admin_message)
+except Exception as e:
+    print("Admin message error:", e)
     
     if db.sismember(PREMIUM_USERS_KEY, user_id):
         # Premium user
