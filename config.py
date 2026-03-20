@@ -11,9 +11,9 @@ BOT_TOKEN = "8741784728:AAFLpwz7UZvEUumoxgO2I7ii8Lo-9ZSpa1o"
 # ================== REDIS DATABASE CONFIG ==================
 
 # Redis Host / Port / Password
-HOST = "127.0.0.1"
-PORT = 6379
-PASSWORD = None   # Set to None if Redis has no password
+HOST = "redis-11676.crce217.ap-south-1-1.ec2.cloud.redislabs.com"
+PORT = 11676
+PASSWORD = yzEpbZzB41i4dPIXo4CSR9uZrbnqslIc  
 
 
 # ================== BOT SETTINGS ==================
