@@ -25,7 +25,6 @@ from tools import (
 )
 
 bot = TelegramClient("tele", API_ID, API_HASH)
-
 db = redis.Redis(
     host=HOST,
     port=PORT,
@@ -38,30 +37,9 @@ PREMIUM_USERS_KEY = "premium_users"
 GIFT_CODES_KEY = "gift_codes"
 
 # Define /info and /id commands to display user information
-@bot.on(
-    events.NewMessage(
-        pattern="/info",
-        incoming=True,
-        outgoing=False,
-    )
-)
-@bot.on(
-    events.NewMessage(
-        pattern="/id",
-        incoming=True,
-        outgoing=False,
-    )
-)
+
 async def user_info(m: UpdateNewMessage):
-    @bot.on(
-    events.NewMessage(
-        pattern="/info|/id",
-        incoming=True,
-        outgoing=False,
-    )
-)
-async def user_info(m: UpdateNewMessage):
-    @bot.on(
+@bot.on(
     events.NewMessage(
         pattern="/info|/id",
         incoming=True,
