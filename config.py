@@ -13,8 +13,8 @@ BOT_TOKEN = "8741784728:AAFLpwz7UZvEUumoxgO2I7ii8Lo-9ZSpa1o"
 # Redis Host / Port / Password
 HOST = "redis-11676.crce217.ap-south-1-1.ec2.cloud.redislabs.com"
 PORT = 11676
-PASSWORD = yzEpbZzB41i4dPIXo4CSR9uZrbnqslIc  
-
+PASSWORD = "yzEpbZzB41i4dPIXo4CSR9uZrbnqslIc"  
+USERNAME = "default"
 
 # ================== BOT SETTINGS ==================
 
